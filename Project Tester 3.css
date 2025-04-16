@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2? family=Poopins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body
+{ background: url("to\ do\ photo.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 315px;
+    height: 100px;
+    /* min-height: 100vh; */
+    
+}
+.list
+{
+    /* position: absolute; */
+    /* bottom: 200px; */
+    background-color:rgba(255, 255, 255, 0);
+    width: 350px;
+
+
+}
+.navigateButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Data{
+    position: fixed;
+    top: 10px;
+    right: 100px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Data1{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Data2{
+    position: fixed;
+    top:10px;
+    right: 190px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-todo-button{
+    background-color: #4CAF50;
+    height: 40px;
+    width: 100px;
+}
+.todo-input-grid{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    text-align: center;
+}

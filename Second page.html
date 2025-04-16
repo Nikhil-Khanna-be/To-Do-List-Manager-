@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional task</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #282c34;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .todo-section {
+            margin-bottom: 40px;
+        }
+        .todo-section h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .todo-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .todo-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .calendar {
+            width: 75%;
+            
+            padding: 20px;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .calendar-header h2 {
+            margin: 0;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .day-block {
+            background-color: lightgreen;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .day2-block {
+            background-color: lightblue;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .day-block h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .event {
+            background-color: white;
+            border-radius: 4px;
+            padding: 5px;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+        #review{
+            width: 100px;
+            height: 60px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body background="2 2 web.jpg">
+    <div class="container">
+        <div class="sidebar">
+            <h2>Todos</h2>
+
+            <div class="todo-section">
+                <h3>This Week</h3>
+                <div class="todo-item">
+                    <input type="checkbox" id="task1">
+                    <label for="task1">Shopping For Home</label>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task2">
+                    <label for="task2">Going Home</label>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task3">
+                    <label for="task3">FEE Project</label>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task4">
+                    <label for="task4">Preparation For MCP Viva</label>
+                </div>
+
+            </div>
+
+            <div class="todo-section">
+                <h3>This Month</h3>
+                <div class="todo-item">
+                    <input type="checkbox" id="task5">
+                    <label for="task5">Save Rs.6000 </label>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task6">
+                    <label for="task6">Donate to Unicef</label>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox" id="task7">
+                    <label for="task7">Maintaining Attendence </label>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="calendar">
+            <div class="calendar-header">
+                <h1><span style="border: 4px solid black;">&nbsp; October-2024 &nbsp;</span></h1>
+                
+                
+                <button><a href="Project Tester 3.html">Back</a></button>
+            </div>
+
+            <div class="calendar-grid">
+                <!-- Monday -->
+                <div class="day-block">
+                    <h3>Monday</h3>
+                    <div class="event">Monday Sync - 9 AM</div>
+                    <div class="event">Lunch Break - 12 PM</div>
+                    <div class="event">Emails - 1 PM</div>
+                </div>
+                
+                <!-- Tuesday -->
+                <div class="day2-block">
+                    <h3>Tuesday</h3>
+                    <div class="event">Weekly design - 10 AM</div>
+                    <div class="event">Lunch Break - 12 PM</div>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="day-block">
+                    <h3>Wednesday</h3>
+                    <div class="event">Design onboarding - 10 AM</div>
+                    <div class="event">Lunch Break - 12 PM</div>
+                </div>
+
+                <!-- Thursday -->
+                <div class="day2-block">
+                    <h3>Thursday</h3>
+                    <div class="event">Blog Post - 10:30 AM</div>
+                    <div class="event">Lunch Break - 12 PM</div>
+                </div>
+
+                <!-- Friday -->
+                <div class="day-block">
+                    <h3>Friday</h3>
+                    <div class="event">Book offsite - 8:45 AM</div>
+                    <div class="event">Brunch - 12 PM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
